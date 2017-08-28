@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { environment as env } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  `,
 })
-export class AppComponent {
-  title = env.appName;
-}
+export class AppComponent {};
