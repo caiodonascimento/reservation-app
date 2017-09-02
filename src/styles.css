@@ -1,4 +1,5 @@
-@import '~@angular/material/prebuilt-themes/purple-green.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css';
 /* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;

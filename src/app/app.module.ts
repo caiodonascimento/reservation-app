@@ -10,6 +10,11 @@ import { MaterialModule } from './app.material-module';
 import { RouterModule, Routes } from '@angular/router';
 import 'hammerjs';
 
+import {
+  SwiperModule,
+  SwiperConfigInterface
+} from 'ngx-swiper-wrapper';
+
 import { environment as env } from '../environments/environment';
 
 import {
@@ -28,6 +33,15 @@ const appRoutes: Routes = [
   },
   { path: '**', component: PageNotFoundComponent }
 ];
+
+const SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  threshold: 50,
+  spaceBetween: 5,
+  slidesPerView: 1,
+  centeredSlides: true,
+  keyboardControl: true
+};
 
 @NgModule({
   declarations: [
@@ -48,7 +62,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: !env.production }
-    )
+    ),
+    SwiperModule.forRoot(SWIPER_CONFIG)
   ],
   providers: [],
   bootstrap: [ AppComponent ]

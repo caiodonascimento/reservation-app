@@ -1,3 +1,39 @@
-<md-toolbar>
+<md-toolbar color="primary">
   <span>{{title}}</span>
+  <span class="header-spacer"></span>
+  <div class="header-menu-bar">
+    <button md-button class="header-icons">
+      Quienes somos
+    </button>
+    <button md-button class="header-icons">
+      Reserva tu hora
+    </button>
+    <button md-button class="header-icons">
+      Ingresar a tu perfil
+    </button>
+  </div>
+  <button md-icon-button class="header-icons header-menu-button"
+    (click)="menuLateral.toggle()">
+    <md-icon>menu</md-icon>
+  </button>
 </md-toolbar>
+<md-sidenav #menuLateral mode="push" position="start">
+  <md-list>
+    <md-list-item>Menú Lateral</md-list-item>
+    <md-list-item>
+      <button md-button class="header-icons">
+        Quienes somos
+      </button>
+    </md-list-item>
+    <md-list-item>
+      <button md-button class="header-icons">
+        Reserva tu hora
+      </button>
+    </md-list-item>
+    <md-list-item>
+      <button md-button class="header-icons">
+        Ingresar a tu perfil
+      </button>
+    </md-list-item>
+  </md-list>
+</md-sidenav>

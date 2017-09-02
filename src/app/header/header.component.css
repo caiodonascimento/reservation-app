@@ -1,0 +1,19 @@
+.header-spacer {
+  flex: 1 1 auto;
+}
+
+.header-icons {
+  padding: 0 4px;
+}
+
+@media screen and (min-width: 650px) {
+  .header-menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-menu-bar {
+    display: none;
+  }
+}

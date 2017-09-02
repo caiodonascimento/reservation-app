@@ -1,0 +1,12 @@
+
+<div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex>
+  <swiper overlay-controls [config]="config" fxFlex>
+    <div *ngFor="let slide of slides" class="swiper-slide">
+      <div class="swiper-slide-content" fxLayout="column" fxLayoutAlign="center center">
+        <div class="single-slide">
+          <img [src]="slide.image" />
+        </div>
+      </div>
+    </div>
+  </swiper>
+</div>

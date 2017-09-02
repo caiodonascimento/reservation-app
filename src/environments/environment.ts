@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  appName: 'Beauty in Home'
+  appName: 'Happy Foot'
 };
