@@ -15,6 +15,8 @@ import {
   SwiperConfigInterface
 } from 'ngx-swiper-wrapper';
 
+import { NguiStickyModule } from '@ngui/sticky';
+
 import { environment as env } from '../environments/environment';
 
 import {
@@ -58,7 +60,7 @@ const SWIPER_CONFIG: SwiperConfigInterface = {
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    RouterModule,
+    NguiStickyModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: !env.production }

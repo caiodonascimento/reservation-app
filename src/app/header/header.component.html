@@ -2,38 +2,37 @@
   <span>{{title}}</span>
   <span class="header-spacer"></span>
   <div class="header-menu-bar">
-    <button md-button class="header-icons">
+    <button md-button>
       Quienes somos
     </button>
-    <button md-button class="header-icons">
+    <button md-button>
+      Servicios
+    </button>
+    <button md-button>
       Reserva tu hora
     </button>
-    <button md-button class="header-icons">
-      Ingresar a tu perfil
+    <button md-button>
+      <md-icon>person</md-icon>
+      Ingresar o Registrarse
     </button>
   </div>
-  <button md-icon-button class="header-icons header-menu-button"
+  <button md-icon-button class="header-menu-button"
     (click)="menuLateral.toggle()">
     <md-icon>menu</md-icon>
   </button>
 </md-toolbar>
-<md-sidenav #menuLateral mode="push" position="start">
-  <md-list>
-    <md-list-item>Menú Lateral</md-list-item>
+<md-sidenav #menuLateral id="menuLateral" mode="push" position="start">
+  <md-nav-list>
+    <h3 mdSubheader>Bienvenido</h3>
+    <md-divider></md-divider>
     <md-list-item>
-      <button md-button class="header-icons">
-        Quienes somos
-      </button>
+      <a mdLine>Quienes somos</a>
     </md-list-item>
     <md-list-item>
-      <button md-button class="header-icons">
-        Reserva tu hora
-      </button>
+      <a mdLine>Servicios</a>
     </md-list-item>
     <md-list-item>
-      <button md-button class="header-icons">
-        Ingresar a tu perfil
-      </button>
+      <a mdLine>Reserva tu hora</a>
     </md-list-item>
-  </md-list>
+  </md-nav-list>
 </md-sidenav>

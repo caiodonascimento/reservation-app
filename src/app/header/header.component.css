@@ -2,10 +2,6 @@
   flex: 1 1 auto;
 }
 
-.header-icons {
-  padding: 0 4px;
-}
-
 @media screen and (min-width: 650px) {
   .header-menu-button {
     display: none;
@@ -16,4 +12,8 @@
   .header-menu-bar {
     display: none;
   }
+}
+
+#menuLateral {
+  width: 200px;
 }
