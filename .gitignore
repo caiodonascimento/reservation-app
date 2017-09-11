@@ -45,3 +45,5 @@ Thumbs.db
 # GCE deploy dependencies
 /gce-app-deploy/node_modules
 /gce-app-deploy/dist
+gce-app-deploy/package-lock.json
+package-lock.json
