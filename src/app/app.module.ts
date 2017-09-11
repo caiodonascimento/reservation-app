@@ -15,7 +15,9 @@ import {
   SwiperConfigInterface
 } from 'ngx-swiper-wrapper';
 
-import { NguiStickyModule } from '@ngui/sticky';
+import { ScrollToModule } from 'ng2-scroll-to';
+
+import { NguiMapModule } from '@ngui/map';
 
 import { environment as env } from '../environments/environment';
 
@@ -24,6 +26,7 @@ import {
   HeaderComponent,
   FooterComponent,
   HomeComponent,
+  SlideComponent,
   PageNotFoundComponent
 } from './';
 
@@ -51,6 +54,7 @@ const SWIPER_CONFIG: SwiperConfigInterface = {
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    SlideComponent,
     PageNotFoundComponent
   ],
   imports: [
@@ -59,8 +63,11 @@ const SWIPER_CONFIG: SwiperConfigInterface = {
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    ScrollToModule.forRoot(),
+    NguiMapModule.forRoot({
+      apiUrl: 'https://maps.google.com/maps/api/js?key=' + env.googleKey
+    }),
     HttpModule,
-    NguiStickyModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: !env.production }

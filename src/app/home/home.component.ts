@@ -9,5 +9,7 @@ import { environment as env } from '../../environments/environment';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  title = 'En construcción!';
+  mapOptions = {
+
+  };
 }

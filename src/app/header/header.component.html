@@ -1,17 +1,17 @@
-<md-toolbar color="primary">
-  <span>{{title}}</span>
+<md-toolbar class="header-color">
+  <span *ngIf="noIcon">{{title}}</span>
   <span class="header-spacer"></span>
   <div class="header-menu-bar">
-    <button md-button>
+    <button md-button scrollTo scrollTargetSelector="#quienesSomos">
       Quienes somos
     </button>
-    <button md-button>
+    <button md-button scrollTo scrollTargetSelector="#servicios">
       Servicios
     </button>
-    <button md-button>
-      Reserva tu hora
+    <button md-button scrollTo scrollTargetSelector="#contacto">
+      Contacto
     </button>
-    <button md-button>
+    <button md-button *ngIf="false">
       <md-icon>person</md-icon>
       Ingresar o Registrarse
     </button>
@@ -24,15 +24,30 @@
 <md-sidenav #menuLateral id="menuLateral" mode="push" position="start">
   <md-nav-list>
     <h3 mdSubheader>Bienvenido</h3>
+    <img src="assets/anonymous.png" class="perfil-img">
+    <md-list-item>
+      <a mdLine>Ingresar o Registrarse</a>
+    </md-list-item>
     <md-divider></md-divider>
     <md-list-item>
-      <a mdLine>Quienes somos</a>
+      <a mdLine scrollTo href="#quienesSomos">
+        Quienes somos
+      </a>
     </md-list-item>
     <md-list-item>
-      <a mdLine>Servicios</a>
+      <a mdLine scrollTo href="#servicios">
+        Servicios
+      </a>
     </md-list-item>
     <md-list-item>
-      <a mdLine>Reserva tu hora</a>
+      <a mdLine scrollTo href="#contacto">
+        Contacto
+      </a>
+    </md-list-item>
+    <md-list-item *ngIf="false">
+      <a mdLine>
+        Reserva tu hora
+      </a>
     </md-list-item>
   </md-nav-list>
 </md-sidenav>

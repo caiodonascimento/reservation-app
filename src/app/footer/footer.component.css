@@ -1,3 +1,11 @@
 .foot-link {
   margin-left: 5px;
 }
+
+.footer-color {
+  background-color: #1F84FF;
+}
+
+.footer-color h3 {
+  color: #fff;
+}
