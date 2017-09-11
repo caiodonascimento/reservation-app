@@ -1,15 +1,71 @@
-<div class="home-title">
-  <h1>La Salud empieza por los pies</h1>
-</div>
-<div class="home-parallax-inicio"></div>
-<div class="home-box quienes-somos">
-
-</div>
-<div class="home-parallax-medio"></div>
-<div class="home-box sla">
-
-</div>
-<div class="home-parallax-fin"></div>
-<div class="home-box contacto">
-
-</div>
+<md-sidenav-container (scrolledTo)="id=$event" ngui-scrollable>
+  <app-header></app-header>
+  <div class="home-title">
+    <img src="assets/logo.png" class="logo" />
+    <span>Deja en nuestras manos el cuidado de tus pies</span>
+    <button md-raised-button color="accent" *ngIf="false">
+      ¡Reserva ahora ya tu consulta!
+    </button>
+  </div>
+  <div class="home-parallax start-image">
+  </div>
+  <div id="quienesSomos" class="home-box quienes-somos">
+    <h2>Quienes somos</h2>
+    <hr/>
+    <p>
+      Somos una joven empresa de servicios de belleza y salud con enfoque en
+      la mejor entrega de servicio donde sea de mayor comodidad para nuestros
+      clientes, ya sea en la comodidad de su hogar o en nuestra clínica.
+      <br/>
+      Estamos orgullosos de entregar un servicio de calidad evolucionando
+      diariamente a través de la retroalimentación de los clientes y de la
+      gran experiencia de nuestro equipo de profesionales.
+    </p>
+  </div>
+  <div class="home-parallax middle-image">
+  </div>
+  <div id="servicios" class="home-box sla">
+    <h2>Servicios</h2>
+    <hr/>
+    <p>
+      Somos una joven empresa de servicios de belleza y salud con enfoque en
+      la mejor entrega de servicio donde sea de mayor comodidad para nuestros
+      clientes, ya sea en la comodidad de su hogar o en nuestra clínica.
+      <br/>
+      Estamos orgullosos de entregar un servicio de calidad evolucionando
+      diariamente a través de la retroalimentación de los clientes y de la
+      gran experiencia de nuestro equipo de profesionales.
+    </p>
+  </div>
+  <div class="home-parallax end-image">
+  </div>
+  <div id="contacto" class="home-box contacto">
+    <h2>Contacto</h2>
+    <hr/>
+    <h3>Happy Foot Spa.</h3>
+    <p>
+      <md-icon>place</md-icon>
+      <span class="contacto-link">
+        Manquehue Norte 1407 of. 26 Vitacura
+      </span>
+      <br/>
+      <md-icon>phone</md-icon>
+      <a class="contacto-link" href="tel:+56976182668">+569 76182668</a>
+      <br/>
+      <md-icon>email</md-icon>
+      <a class="contacto-link" href="mailto:contacto@happyfoot.cl">
+        contacto@happyfoot.cl
+      </a>
+    </p>
+    <ngui-map center="Brampton, Canada">
+      <marker position="Brampton, Canada"
+       [icon]="{
+         url: 'https://plnkr.co/img/plunker.png',
+         anchor: [16,16],
+         size: [32,32],
+         scaledSize: [32,32]
+       }">
+      </marker>
+    </ngui-map>
+  </div>
+</md-sidenav-container>

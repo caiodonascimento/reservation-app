@@ -5,5 +5,6 @@
 
 export const environment = {
   production: false,
-  appName: 'Happy Foot'
+  appName: 'Happy Foot',
+  googleKey: 'AIzaSyC-Y3WEOeczB5eYyoAqV-JBBOPcnAkoKcI'
 };

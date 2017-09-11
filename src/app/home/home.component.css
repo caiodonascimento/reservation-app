@@ -1,40 +1,61 @@
 .home-title {
   width: 100%;
-  height: 200px;
-  background-color: #673ab7;
-  padding-top: 100px;
+  min-height: 250px;
+  background-color: #1F84FF;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-.home-title h1 {
-  font-family: Verdana, sans-serif;
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 425px) {
+  .logo {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .logo {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .logo {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.home-title span {
+  display: block;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
   color: #fff;
   text-transform: uppercase;
   line-height: 1.8;
-  letter-spacing: -1px;
+  font-weight: bold;
+  margin: 20px;
 }
 
-.home-parallax-inicio {
+.start-image {
   background-image: url("../../assets/image-3.jpg");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.home-parallax-medio {
+.middle-image {
   background-image: url("../../assets/image-2.jpg");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.home-parallax-fin {
+.end-image {
   background-image: url("../../assets/image-1.jpg");
-  min-height: 500px;
+}
+
+.home-parallax {
+  min-height: 560px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,6 +64,25 @@
 
 .home-box {
   background-color: #fff;
-  height: 300px;
+  min-height: 300px;
   width: 100%;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  margin-left: 20px;
+  color: rgb(134, 146, 159);
+}
+
+hr {
+  width: 97%;
+  color: rgb(134, 146, 159);
+}
+
+.home-box p {
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  color: rgb(134, 146, 159);
+  margin: 20px;
+  font-size: 20px;
 }
