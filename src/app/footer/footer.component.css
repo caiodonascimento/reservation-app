@@ -2,6 +2,23 @@
   margin-left: 5px;
 }
 
+.footer-spacer {
+  flex: 1 1 auto;
+}
+
+.footer-title {
+  margin-right: 10px;
+}
+
+.footer-color button {
+  color: #fff;
+}
+
+.made-for {
+  color: #fff;
+  font-size: 0.6em
+}
+
 .footer-color {
   background-color: #1F84FF;
 }

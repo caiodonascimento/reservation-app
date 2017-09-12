@@ -65,7 +65,7 @@ const SWIPER_CONFIG: SwiperConfigInterface = {
     ReactiveFormsModule,
     ScrollToModule.forRoot(),
     NguiMapModule.forRoot({
-      apiUrl: 'https://maps.google.com/maps/api/js?key=' + env.googleKey
+      apiUrl: 'https://maps.googleapis.com/maps/api/js?key=' + env.googleKey
     }),
     HttpModule,
     RouterModule.forRoot(

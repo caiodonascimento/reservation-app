@@ -9,40 +9,100 @@
   </div>
   <div class="home-parallax start-image">
   </div>
-  <div id="quienesSomos" class="home-box quienes-somos">
-    <h2>Quienes somos</h2>
+  <div class="home-box quienes-somos">
+    <h2 id="quienesSomos">Quienes somos</h2>
     <hr/>
     <p>
       Somos una joven empresa de servicios de belleza y salud con enfoque en
       la mejor entrega de servicio donde sea de mayor comodidad para nuestros
       clientes, ya sea en la comodidad de su hogar o en nuestra clínica.
+      <br/>
       <br/>
       Estamos orgullosos de entregar un servicio de calidad evolucionando
       diariamente a través de la retroalimentación de los clientes y de la
       gran experiencia de nuestro equipo de profesionales.
     </p>
+    <div class="row">
+      <div class="column mini">
+        <img src="assets/star.png" />
+        <hr>
+        <p>
+          Queremos ofrecer el mejor servicio así que
+          diseñamos cuidadosamente cada paso durante
+          la atención para que el cliente termine feliz.
+        </p>
+      </div>
+      <div class="column mini">
+        <img src="assets/calendar.png" />
+        <hr>
+        <p>
+          A través de nuestro sistema de reservas no tendrás
+          que esperar y podrás seleccionar el profesional con
+          el que te quieras atender.
+        </p>
+      </div>
+      <div class="column mini">
+        <img src="assets/map.png" />
+        <hr>
+        <p>
+          Para falicitar la entrega de nuestro servicio
+          ofrecemos atención en dos modalidades, en la comodidad
+          de su domicilio u oficina, o en nuestra encantadora clínica.
+        </p>
+      </div>
+    </div>
   </div>
   <div class="home-parallax middle-image">
   </div>
-  <div id="servicios" class="home-box sla">
-    <h2>Servicios</h2>
+  <div class="home-box sla">
+    <h2 id="servicios">Servicios</h2>
     <hr/>
     <p>
-      Somos una joven empresa de servicios de belleza y salud con enfoque en
-      la mejor entrega de servicio donde sea de mayor comodidad para nuestros
-      clientes, ya sea en la comodidad de su hogar o en nuestra clínica.
-      <br/>
-      Estamos orgullosos de entregar un servicio de calidad evolucionando
-      diariamente a través de la retroalimentación de los clientes y de la
-      gran experiencia de nuestro equipo de profesionales.
+      Actualmente ofrecemos los siguientes servicios:
+    </p>
+    <div class="row">
+      <div class="column">
+        <md-card class="servicio-card">
+          <md-card-header>
+            <md-card-title>Podología</md-card-title>
+          </md-card-header>
+          <img md-card-image src="assets/podologia.png" />
+          <md-card-content>
+            <p>
+              Atención de cuidado a pies que permite el tratamiento de
+              variados problemas que con constancia se dan en los pies,
+              permitiendo así lucir pies sanos y lindos.
+            </p>
+          </md-card-content>
+        </md-card>
+      </div>
+      <div class="column">
+        <md-card class="servicio-card">
+          <md-card-header>
+            <md-card-title>Manicure</md-card-title>
+          </md-card-header>
+          <img md-card-image src="assets/manicure.jpg" />
+          <md-card-content>
+            <p>
+              Cuida tus manos como muestra de belleza y cuidado para
+              lucir bellas y vigorizantes manos. Tus manos te agradecerán
+              y te sentirás más comodo.
+            </p>
+          </md-card-content>
+        </md-card>
+      </div>
+    </div>
+    <p>
+      ¡Todos con atención en nuestra clínica o a domicilio!
     </p>
   </div>
   <div class="home-parallax end-image">
   </div>
-  <div id="contacto" class="home-box contacto">
-    <h2>Contacto</h2>
+  <div class="home-box contacto">
+    <h2 id="contacto">Contacto</h2>
     <hr/>
-    <h3>Happy Foot Spa.</h3>
+    <h3>Happy Foot</h3>
+    <h4>Servicios de cuidado y belleza</h4>
     <p>
       <md-icon>place</md-icon>
       <span class="contacto-link">
@@ -57,10 +117,11 @@
         contacto@happyfoot.cl
       </a>
     </p>
-    <ngui-map center="Brampton, Canada">
-      <marker position="Brampton, Canada"
+    <br/>
+    <ngui-map center="Manquehue Norte 1407, Vitacura, Santiago" zoom="16">
+      <marker position="Manquehue Norte 1407, Vitacura, Santiago"
        [icon]="{
-         url: 'https://plnkr.co/img/plunker.png',
+         url: 'assets/placeholder.png',
          anchor: [16,16],
          size: [32,32],
          scaledSize: [32,32]
