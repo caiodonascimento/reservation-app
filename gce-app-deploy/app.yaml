@@ -1,4 +1,4 @@
-application: happyfoot-cl
+#application: happyfoot-cl
 runtime: nodejs
 env: flex
 threadsafe: true
