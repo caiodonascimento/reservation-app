@@ -1,5 +1,5 @@
-#application: happyfoot-cl
-runtime: nodejs
+application: happyfoot-cl
+runtime: go
 env: flex
 threadsafe: true
 automatic_scaling:
